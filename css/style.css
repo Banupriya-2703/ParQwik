@@ -51,30 +51,96 @@ nav img {
 }
 /* Header ends here */
 
+
 /* Section starts here */
 .container {
   padding-top: 80px;
 }
 
+.container .row{
+  margin-left: 6rem;
+}
+
 .left {
   padding-top: 70px;
-  padding-left: 150px;
+  /* padding-left: 150px; */
 }
 /* Section ends here */
 
 
+/* Caurosel starts here */
+.s2 h1{
+  text-align: center;
+  margin-top: 70px;
+  padding: 20px;
+}
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+}
+.column{
+  margin: 16px;
+  width: 100%;
+  font-size: 20px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  border-radius: 40px;
+}
+.column a{
+  text-decoration: none;
+  color: black;
+}
 
+.carousel-item img{
+  width: 60px;
+  height: 50px;
+}
+.column span{
+  display: block;
+}
+.carousel-control-prev-icon{
+margin-left: -120px;
+}
+.carousel-control-next-icon{
+  margin-right: -120px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  background-color: rgb(20, 6, 83);
+  color: white;
+  font-weight: 800;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 30px;
+  user-select: none;
+}
+/* Carousel ends here */
 
-
-
-
-
-
-
+/* Section3 starts here */
+.gridsystem .row .two .img-fluid{
+  width: 600px;
+}
+.gridsystem .row {
+  padding-left: 250px;
+}
+.gridsystem .row .one{
+  padding-top: 6rem;
+  text-align: left;
+}
+/* Section3 ends here */
 
 
 
 /* Media Queries */
+
 /* Phone */
 @media (max-width: 767px) {
     /* Header */
@@ -93,41 +159,48 @@ nav img {
   
     /* Section */
     .container {
-      padding-top: 10px;
+      padding-top: 5px;
     }
-  
-    .left {
+    .container .left {
       padding: 40px;
     }
-  
     .right {
       padding-left: 50px;
     }
-    
-    /* Responsive Font Sizes */
-    h2 {
-      font-size: 1.5rem;
-    }
-    
-    p {
-      font-size: 1rem;
-    }
-    
-    /* Responsive Padding and Margin */
-    .container {
-      padding-bottom: 40px;
-    }
+  }
+
+  /* section2 */
   
-    .left {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .right {
-      padding-left: 20px;
-    }
+  .s2 h1{
+    margin-top:50px;
+  }
+  .column {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 8px;
+  }
+
+  /* section3 */
+  .gridsystem{
+    margin-top: -15px;
+  }
+  .gridsystem .row{
+    text-align: center;
+  }
+  .img-fluid{
+    width: 500px;
+    padding: 10px ;
+  }
+  .gridsystem{
+    margin-left: -6rem;
+    max-width: 1100px;
   }
   
+
   /* Tablet */
   @media (min-width: 768px) and (max-width: 1023px) {
     #navbarNav .nav-item {
@@ -136,29 +209,33 @@ nav img {
       justify-content: center;
       align-items: center;
     }
-    
-    /* Responsive Font Sizes */
-    h2 {
-      font-size: 2rem;
+    /* section1 */
+    .container{
+      margin-left: 7rem;
     }
-    
-    p {
-      font-size: 1.2rem;
+    /* section2 */
+    .s2 h1{
+      margin-top:0;
     }
-    
-    /* Responsive Padding and Margin */
-    .container {
-      padding-top: 120px;
-      padding-bottom: 120px;
+    .column {
+      width: 50%;
+      font-size: 18px;
+    }
+    /* section3 */
+    .gridsystem{
+      margin-left: -10rem;
+      text-align: center;
+    }
+    .gridsystem .row .one{
+      padding-top: 1rem;
+    }
+    .gridsystem .img-fluid{
+      width: 500px;
     }
   
-    .left {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-    
-    .right {
-      padding-left: 80px;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      font-size: 10px;
     }
   }
   
@@ -190,31 +267,6 @@ nav img {
     
     #imgs {
       width: 80%;
-    }
-    
-    /* Responsive Font Sizes */
-    h2 {
-      font-size: 2rem;
-    }
-    
-    p {
-      font-size: 1.2rem;
-    }
-    
-    /* Responsive Padding and Margin */
-    .container {
-      padding-top: 160px;
-      padding-bottom: 160px;
-    }
-    
-    .left {
-      padding-top: 180px;
-      padding-left: 250px;
-      padding-right: 250px;
-    }
-    
-    .right {
-      padding-left: 100px;
     }
   }
   
