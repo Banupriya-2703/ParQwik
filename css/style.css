@@ -11,6 +11,9 @@ html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
+p{
+  color: grey;
+}
 
 /* Header starts here */
 nav img {
@@ -138,7 +141,36 @@ margin-left: -120px;
 }
 /* Section3 ends here */
 
+/* Section4 starts here */
+.details{
+  margin: 70px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.details-item{
+  width: 20%;
+  padding: 1rem;
+}
+.details-item .icon{
+  margin-left: 4rem;
+}
+.details-item p{
+  padding-top: 1rem;
+}
+.details span{
+  color:grey;
+  font-size: 60px;
+  margin: 80px;
+}
+.s4{
+  margin: 3rem;
+  text-align: center;
+}
 
+
+
+
+/* Section4 ends here */
 
 /* Media Queries */
 
@@ -184,6 +216,9 @@ margin-left: -120px;
   .carousel-control-next-icon {
     font-size: 8px;
   }
+  .flexbox{
+    padding: 0;
+  }
 
   /* Section3 */
   .gridsystem{
@@ -200,7 +235,38 @@ margin-left: -120px;
     margin-left: 4rem;
     max-width: 1100px;
   }
+/* Section4 */
+.s4{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  font-size: 3em;
 }
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-item{
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.details-item p{
+text-align: center;
+font-size: 2rem;
+}
+.details-item .icon{
+margin-left: 5rem;
+font-size: 4rem;
+padding-bottom: 2rem;
+}
+.details span{
+  display: none;
+}
+}
+
+
+
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -259,6 +325,35 @@ margin-left: -120px;
   .gridsystem .img-fluid{
     width: 500px;
   }
+
+  /* Section4 */
+  .s4{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-size: 3em;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-item{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .details-item p{
+  text-align: center;
+  font-size: 2rem;
+  }
+  .details-item .icon{
+  margin-left: 16rem;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  }
+  .details span{
+    display: none;
+  }
 }
 
 /* Desktops */
@@ -303,5 +398,29 @@ margin-left: -120px;
   }
   .gridsystem .row .one{
     padding-top: 6rem;
+  }
+
+  /* Section4 */
+  .s4{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 3em;
+  }
+  .details{
+    display: flex;
+    flex-direction: row;
+  }
+  .details-item{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .details-item p{
+  text-align: center;
+  font-size: 1rem;
+  }
+  .details-item .icon{
+  padding: 2rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
   }
 }
