@@ -52,6 +52,115 @@ nav img {
 #imgs {
   width: 60%;
 }
+
+
+/* =======For LOGIN and CREATE ACCOUNT button====== */
+.modal-content .modal-header
+{
+    border-bottom: none;
+}
+
+
+.signin_modal .nav-tabs .nav-link
+{
+    background-color: rgba(120, 121, 122, 0.884);
+    border-radius: 0;
+    font-weight: 600;
+    border-color: #fff;
+}
+.signin_modal .nav-tabs .nav-item
+{
+    width: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    width: 100%;
+    color: orangered;
+}
+.signin_modal .nav-tabs .nav-link.active
+{
+    color: orangered;
+}
+.signin_modal .nav-tabs
+{
+    border-bottom: none;
+}
+
+/* =======FOR CREATING FORM======= */
+
+.modal-dialog
+{
+    box-shadow: 2px 2px 8px 8px rgba(45, 45, 65, 0.877);
+    border: none;
+}
+#home-tab-pane,#profile-tab-pane
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.form-label
+{
+    font-size: small;
+    font-weight: bold;
+    color: darkgray;
+}
+
+.form-control
+{
+    height: 30px;
+    position: relative;
+}
+.myeye
+{
+    position: absolute;
+    font-size: large;
+    margin-top: -25px;
+    margin-left:370px;
+    cursor: pointer;
+    
+}
+.star
+{
+    color: red;
+    font-weight: bolder;
+}
+
+/* ====SIGNIN AND FORGOT PASSWORD BUTTON======= */
+
+
+#home-tab-pane .btn-primary,#profile-tab-pane .btn-primary
+{
+    width: 100%;
+    background-color: rgb(236, 86, 31);
+    border-color: #fff;
+    font-weight: bolder;
+}
+#home-tab-pane .btn-secondary
+{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    color: grey;
+    font-weight: bolder;
+    border-color: orangered;
+}
+/* ========HORIZONTAL LINE========= */
+.line
+{
+    margin-top: 80px;
+}
+.or
+{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(36, 33, 33);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* Header ends here */
 
 
@@ -272,9 +381,59 @@ input:focus{
 .phone{
   margin-right: 4rem;
 }
-
-
-
+/* Questionary section */
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+}
+.colscon{
+  margin-left: 20rem;
+  margin-top: -6rem;
+}
+.collapsed{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  padding: 0.8rem;
+  margin-top: 0.9rem;
+  width: 60%;
+  color: gray;
+}
+/* footer */
+.footer{
+  margin-top: 4rem;
+  display: flex;
+  background-color: rgb(17, 129, 108);
+  height: 24rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.footer-content img{
+  margin-top: -1rem;
+}
+.footer-content .p1{
+  width: 13rem;
+}
+.footer-content{
+  margin-left: 6rem;
+}
+.footer-content p{
+  color: white;
+  width: 7rem;
+  margin-top: 0.2rem;
+  font-size: 10px;
+}
+.footer-content h6{
+  color: white;
+  font-weight: 800;
+}
+.footer-content ul{
+  list-style-type: none;
+}
+.footer-content a{
+  text-decoration: none;
+  color: white;
+  margin-left: -2rem;
+  font-size: 12px;
+}
 
 
 
@@ -409,6 +568,7 @@ input::placeholder{
 .btns{
  display: none;
 }
+/* Apps */
 .apps{
   display: flex;
   flex-direction: column;
@@ -422,6 +582,18 @@ input::placeholder{
 .screen{
   width:19rem;
   padding-left: 4rem;
+}
+/* Question*/
+.colscon{
+  margin-left: 5rem;
+}
+.collapsed span{
+display: none;
+}
+/* footer */
+.footer{
+  height: 55rem;
+  padding-left: 0;
 }
 }
 /* Tablet */

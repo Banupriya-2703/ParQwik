@@ -48,8 +48,93 @@
                     <a class="nav-link">Careers</a>
                   </li>
                   <li class="nav-item">
-                    <button type="button" class="btn btn-success">Login</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
                   </li>
+                    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <img src="./images/logo.png" alt="" height="80px" style="margin:auto ;">
+      </div>
+      <div class="modal-body signin_modal">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">LOGIN</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">CREATE ACCOUNT</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+
+              <!-- ======SIGN-IN PAGE======== -->
+
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email <span class="star">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password <span  class="star">*</span></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <i class="fa-solid fa-eye myeye"></i>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary">SIGN IN</button>
+                      <button type="submit" class="btn btn-secondary">FORGOT YOUR PASSWORD</button>
+                      <hr class="line">
+                      <h6 class="or">OR LOGIN WITH</h6>
+                      <div class="social-icon">
+                          <button class="fb"><img src="./images/facebook.png" alt=""> FACEBOOK</button>
+                          <button class="twi"><img src="./images/twitter.png" alt="" class="twt-logo"></IMG> TWITTER</button>
+                          <button class="ggl"><img src="./images/google-logo-9817.png" alt="" class="ggl-logo"> GOOGLE</button>
+                      </div>
+                    </form>
+              </div>
+
+              <!-- =====CREATE ACCOUNT PAGE===== -->
+
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <form>
+                      <div class="mb-3">
+                          <label for="exampleInputUser2" class="form-label">Username <span class="star">*</span></label>
+                          <input type="text" class="form-control" id="exampleInputUser1" aria-describedby="textHelp">
+                        </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputEmail2" class="form-label">Email <span class="star">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Password <span  class="star">*</span></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <i class="fa-solid fa-eye myeye"></i>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
+                      <hr class="line">
+                      <h6 class="or">OR LOGIN WITH</h6>
+                      <div class="social-icon">
+                          <button class="fb"><img src="./images/facebook.png" alt=""> FACEBOOK</button>
+                          <button class="twi"><img src="./images/twitter.png" alt="" class="twt-logo"></IMG> TWITTER</button>
+                          <button class="ggl"><img src="./images/google-logo-9817.png" alt="" class="ggl-logo"> GOOGLE</button>
+                      </div>
+                    </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                    
+
+
+
+                  
                 </ul>
               </div>
             </div>
@@ -362,7 +447,108 @@
     </div>
   </div>
   <!-- App deatils ends here -->
-  
+
+
+  <!-- Questionary Sections starts here -->
+  <h2 class="s4"style="margin-left:1rem">Frequently Asked Question</h2>
+  <div class="container colscon">
+    <div id="questionsAccordion" class="collapse-container">
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="question1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1" data-bs-parent="#questionsAccordion">
+            Can I reserve a parking spot in advance ? <span style="color: green; font-size: 2rem; margin-left: 26rem; font-weight: 800;">&gt;</span>
+          </button>
+        </h3>
+        <div id="answer1" class="accordion-collapse collapse show" aria-labelledby="question1" data-bs-parent="#questionsAccordion">
+          <div class="accordion-body" style="width: 50%; padding: 1.7rem;">
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore expedita voluptatem impedit incidunt ab excepturi, nulla consequatur pariatur harum sunt!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="question2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2" data-bs-parent="#questionsAccordion">
+            What happens if I exceed my parking reservation time ? <span style="color: green; font-size: 2rem; margin-left: 19.6rem; font-weight: 800;">&gt;</span>
+          </button>
+        </h3>
+        <div id="answer2" class="accordion-collapse collapse" aria-labelledby="question2" data-bs-parent="#questionsAccordion">
+          <div class="accordion-body" style="width: 50%; padding: 1.2rem;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ipsam.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="question3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3" data-bs-parent="#questionsAccordion">
+            Can I cancel my parking reservation ? <span style="color: green; font-size: 2rem; margin-left: 27.6rem; font-weight: 800;">&gt;</span>
+          </button>
+        </h3>
+        <div id="answer3" class="accordion-collapse collapse" aria-labelledby="question3" data-bs-parent="#questionsAccordion">
+          <div class="accordion-body" style="width: 50%; padding: 1.2rem;">
+            Lorem ipsum dolor sit amet.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="question4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4" data-bs-parent="#questionsAccordion">
+            Does ParkQwik operate in multiple cities ? <span style="color: green; font-size: 2rem; margin-left: 25.6rem; font-weight: 800;">&gt;</span>
+          </button>
+        </h3>
+        <div id="answer4" class="accordion-collapse collapse" aria-labelledby="question4" data-bs-parent="#questionsAccordion">
+          <div class="accordion-body" style="width: 50%; padding: 1.5rem;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, minima!
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Questionary Section ends here -->
+
+
+  <!-- Footer starts here -->
+  <div class="footer">
+    <div class="footer-content">
+      <img src="./images/logo (2).png" alt="">
+      <p class="p1">The Complete Parking App and Car Services Solution</p>
+      <div class="social-icons" style="font-size: 1.5rem;">
+        <i class="fa-brands fa-facebook-f" style="color: #fbfcfe;"></i>        
+        <i class="fa-brands fa-twitter" style="color: #fbfcfe;"></i>        
+        <i class="fa-brands fa-instagram" style="color: #fbfcfe"></i>
+        <i class="fa-brands fa-linkedin" style="color: #fbfcfe;"></i>
+      </div>
+    </div>
+    <div class="footer-content">
+      <h6>Quick Links</h6>
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Newsletters</a></li>
+        <li><a href="">Help & Support</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-content">
+      <h6>Products</h6>
+      <p>Fastag Services</p>
+      <p>Nearby Parking</p>
+      <p>EV Parking</p>
+      <p>Rentout Helmet</p>
+      <p>Doorstep Car Wash</p>
+      <p>Road Assistance</p>
+      <p>Car Insurances</p>
+      <p>Shop</p>
+    </div>
+    <div class="footer-content">
+      <h6>Reach Us</h6>
+      <p>info@parkqwik.com</p>
+      <p>80565 28565</p>
+      <p>Level 7, IIFL Towers,143,MGR Main Road,Perungudi,Chennai-96.</p>
+    </div>
+    <h6 style="color: white; margin-left: 28rem; margin-top: 1rem;">&copy; 2023 Parkqwik. All rights reserved</h6>
+  </div>
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
