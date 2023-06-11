@@ -103,14 +103,14 @@ nav img {
 .column span{
   display: block;
 }
-.carousel-control-prev-icon{
+.btn-left{
 margin-left: -120px;
 }
-.carousel-control-next-icon{
+.btn-right{
   margin-right: -120px;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
+.btn-icon,
+.btn-icon,.btns{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -222,8 +222,65 @@ input:focus{
   margin-top: -2rem;
 }
 /* Section5 ends here */
-/* Media Queries */
 
+/* Section 6 starts here */
+.card{
+  background-image: url(../images/user1.webp);
+  background-size: cover;
+  background-repeat: none;
+}
+.p-2 .card-text{
+  background-color: black;
+  opacity: 0.6;
+  position: relative;
+  bottom: -16rem;
+  color: white;
+  height: 5.5rem;
+  padding: 0.4rem;
+}
+.reviews{
+  margin-left: 9rem;
+}
+.d-flex.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btns{
+  margin-left: -10rem;
+}
+/* Section6 ends here */
+
+/* App starts */
+.p-2 ul{
+ list-style-type: none;
+ display: flex;
+}
+.p-2 ul a img{
+  width: 8rem;
+}
+.apple{
+  position: relative;
+  top: 0;
+  left: 0.6rem;
+}
+
+.apps{
+  margin-top: 5rem;
+  width: 15rem;
+  margin-left: 15rem;
+}
+.phone{
+  margin-right: 4rem;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
 /* Phone */
 @media (max-width: 767px) {
   /* Header */
@@ -262,12 +319,13 @@ input:focus{
     width: 100%;
     font-size: 16px;
   }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+  .btn-icon,
+  .btn-icon {
     font-size: 8px;
   }
   .flexbox{
     padding: 0;
+    flex-wrap: wrap;
   }
 
   /* Section3 */
@@ -323,7 +381,48 @@ padding-bottom: 2rem;
 .btn{
   margin-top: 1rem;
 }
+.map-content{
+  margin-left: 6rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.maps{
+  margin-top: -3rem;
+}
+input{
+  width: 100%;
+  padding-left: 1rem;
+}
+input::placeholder{
+  font-size: 1.3rem;
+  padding: 0;
+}
+.btn2{
+  padding: 0;
+}
 
+/* Section6 */
+.reviews{
+  margin-left: 4rem;
+  margin-top: -6rem;
+}
+.btns{
+ display: none;
+}
+.apps{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.download{
+  padding-left: 2rem;
+  text-align: center;
+  width: fit-content;
+}
+.screen{
+  width:19rem;
+  padding-left: 4rem;
+}
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -366,8 +465,8 @@ padding-bottom: 2rem;
     width: 50%;
     font-size: 18px;
   }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+  .btn-icon,
+  .btn-icon {
     font-size: 10px;
   }
 
@@ -444,9 +543,8 @@ padding-bottom: 2rem;
 #map{
   display: none;
 }
-
-
 }
+
 
 /* Desktops */
 @media (min-width: 1366px) {
@@ -479,8 +577,8 @@ padding-bottom: 2rem;
   }
 
   /* Caurosel */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+  .btn-icon,
+  .btn-icon {
     font-size: 10px;
   }
 
