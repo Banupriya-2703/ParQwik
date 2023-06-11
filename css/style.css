@@ -166,12 +166,62 @@ margin-left: -120px;
   margin: 3rem;
   text-align: center;
 }
-
-
-
-
 /* Section4 ends here */
 
+
+/* Section5 starts here */
+.maps{
+  display: flex;
+}
+.map-content{
+  width: 50%;
+  margin-left: 12%;
+}
+input{
+  padding: 0.6rem;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+input::placeholder{
+  color: grey;
+  padding-left: 2em;
+}
+.location{
+  position: relative;
+  z-index: 1;
+  top: 0.1em;
+  left: 1.5em;
+  font-size: 1.4em;
+}
+input:focus{
+  padding-left: 3em;
+}
+.btn2{
+  margin-left: -1em;
+  margin-top: -0.3em;
+  padding-left: 1.9em;
+  border-radius: 10px;
+  width: 100px;
+  height: 2.9rem;
+}
+.glass{
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 1rem;
+  font-size: 1em;
+}
+#map{
+  display: flex;
+  width: 50%;
+  height: 250px;
+  border-radius: 42rem 100rem 0 0;
+  margin-right: 5% ;
+  padding: 2rem;
+  margin-top: -2rem;
+}
+/* Section5 ends here */
 /* Media Queries */
 
 /* Phone */
@@ -256,18 +306,25 @@ text-align: center;
 font-size: 2rem;
 }
 .details-item .icon{
-margin-left: 5rem;
+margin-left: 6rem;
 font-size: 4rem;
 padding-bottom: 2rem;
 }
 .details span{
   display: none;
 }
+/* Section5 */
+#map{
+  display: none;
+}
+.location,.glass{
+  display: none;
+}
+.btn{
+  margin-top: 1rem;
 }
 
-
-
-
+}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Header */
@@ -354,6 +411,41 @@ padding-bottom: 2rem;
   .details span{
     display: none;
   }
+
+  
+/* Section5 */
+.maps{
+  display: flex;
+  flex-direction: column;
+}
+.map-content{
+  margin-top: -6rem;
+  margin-left: 6rem;
+}
+.map-content h1,p{
+  text-align: center;
+  font-size:1em;
+}
+.btn2{
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.location{
+  position:relative ;
+  top: 2.2rem;
+  left: 1rem;
+}
+.glass{
+  position: relative;
+  top: 0.6rem;
+  left: 4rem;
+  font-size: 1rem;
+}
+#map{
+  display: none;
+}
+
+
 }
 
 /* Desktops */
