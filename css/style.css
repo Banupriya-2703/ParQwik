@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -376,7 +374,7 @@ input:focus{
 .apps{
   margin-top: 5rem;
   width: 15rem;
-  margin-left: 15rem;
+  margin-left: 12rem;
 }
 .phone{
   margin-right: 4rem;
@@ -403,14 +401,16 @@ input:focus{
   display: flex;
   background-color: rgb(17, 129, 108);
   height: 24rem;
+  /* max-width: 1200px; */
   padding: 2rem;
+  width: 100%;
   flex-wrap: wrap;
 }
 .footer-content img{
   margin-top: -1rem;
 }
 .footer-content .p1{
-  width: 13rem;
+  width: 10rem;
 }
 .footer-content{
   margin-left: 6rem;
@@ -532,7 +532,8 @@ padding-bottom: 2rem;
 }
 /* Section5 */
 #map{
-  display: none;
+  margin-left: 7rem;
+  margin-top: 3rem;
 }
 .location,.glass{
   display: none;
@@ -544,6 +545,10 @@ padding-bottom: 2rem;
   margin-left: 6rem;
   text-align: center;
   font-size: 1.6rem;
+}
+.maps{
+  display: flex;
+  flex-direction: column;
 }
 .maps{
   margin-top: -3rem;
@@ -562,7 +567,7 @@ input::placeholder{
 
 /* Section6 */
 .reviews{
-  margin-left: 4rem;
+  margin-left: 6rem;
   margin-top: -6rem;
 }
 .btns{
@@ -571,9 +576,11 @@ input::placeholder{
 /* Apps */
 .apps{
   display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
+  flex-direction:column;
+  margin-left: 5rem;
 }
+
+
 .download{
   padding-left: 2rem;
   text-align: center;
@@ -594,6 +601,9 @@ display: none;
 .footer{
   height: 55rem;
   padding-left: 0;
+}
+.footer-content .last{
+  display: none;
 }
 }
 /* Tablet */
@@ -715,6 +725,17 @@ display: none;
 #map{
   display: none;
 }
+/* Apps */
+.apps{
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rem;
+}
+
+/* Question */
+.collapsed span{
+  display: none;
+  }
 }
 
 
